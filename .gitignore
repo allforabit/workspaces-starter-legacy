@@ -6,4 +6,7 @@
 !/yarn/versions
 
 # TypeScript
-/**/**/build/
+build/
+
+# Webpack Cache
+node_modules/
