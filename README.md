@@ -49,4 +49,4 @@ Yarn 2 comes with a revamp of workspaces, smarter and faster. There are a few ca
 
 You can read about his implementation by following that link to his website.
 
-Although VS Code's Extensions are broken with Yarn 2 right now, you can still use the ESLint CLI to focus on immediate fixes as a one-off command, rather than where I usally format on save. Hopefully Plug 'n Play will be fixed, but right now I get continuous errors when running prettier, and ESLint is inactive.
+In order to get things working with Yarn 2, simply run `yarn pnpify --sdk` if you're having issues with ESLint and Prettier extensions in VS Code. It's that simple!

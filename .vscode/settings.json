@@ -1,4 +1,18 @@
 {
+  "editor.tabSize": 2,
+  "files.eol": "\n",
   "typescript.tsdk": ".vscode/pnpify/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "npm.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.enable": true,
+  "eslint.nodePath": ".vscode/pnpify",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "prettier.prettierPath": ".vscode/pnpify/prettier/index.js"
 }
