@@ -42,3 +42,7 @@ Required by: send@npm:0.17.1 (via /C:/Users/adria/Desktop/Grim/projects/yarn-ber
 ## Workspaces
 
 Yarn 2 comes with a revamp of workspaces, smarter and faster. There are a few caveats of course, in that while some dependencies can be added at the root level, others must be added on a per-workspace basis. For example, TypeScript is a global workspace tool, but Express is an individual workspace module. They all use the same `.yarn/cache` but have independent needs. This makes sense, why globally install Chalk if only one workspace uses it? Unfortunately you can't add express globally and expect it to work, TypeScript will tell you the dependency doesn't exist.
+
+## ESLint + Prettier
+
+Although VS Code's Extensions are broken with Yarn 2 right now, you can still use the ESLint CLI to focus on immediate fixes as a one-off command, rather than where I usally format on save. Hopefully Plug 'n Play will be fixed, but right now I get continuous errors when running prettier, and ESLint is inactive.
