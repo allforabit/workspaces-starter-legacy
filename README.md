@@ -10,7 +10,7 @@ There are a handlful of optimisations and additions I need to add, performance a
 
 - Prettier
 - ESLint-TypeScript ~~TSLint~~
-- Performance optimisations
+- Performance optimisations (will always need work)
 - Jest Testing
 
 ## Express
