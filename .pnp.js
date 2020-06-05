@@ -50,6 +50,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:1.6.4"
       ],
       [
+        "tslib",
+        "npm:2.0.0"
+      ],
+      [
         "typescript",
         "patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=8cac75"
       ],
@@ -74,6 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:2.0.0-rc.22"],
             ["express", "npm:4.17.1"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["tslib", "npm:2.0.0"],
             ["typescript", "patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.3.11"]
@@ -5949,6 +5954,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:1.13.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/tslib-npm-2.0.0-4d841ae35a-3.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["tty-browserify", [
@@ -6444,6 +6456,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/pnpify", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:2.0.0-rc.22"],
             ["express", "npm:4.17.1"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["tslib", "npm:2.0.0"],
             ["typescript", "patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
             ["webpack-cli", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.3.11"]
