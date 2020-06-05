@@ -6,12 +6,12 @@ This is mostly for me, and over time I'll tweak this as I see fit over time for 
 
 ## TODO
 
-There are a handlful of optimisations and additions I need to add, performance and tooling wise for future projects. 
+There are a handlful of optimisations and additions I need to add, performance and tooling wise for future projects.
 
 - Prettier
 - ESLint-TypeScript ~~TSLint~~
 - Performance optimisations
-
+- Jest Testing
 
 ## Express
 
@@ -24,7 +24,7 @@ Critical dependency: the request of a dependency is an expression
  @ ./.yarn/cache/express-npm-4.17.1-6815ee6bf9-3.zip/node_modules/express/lib/express.js
  @ ./.yarn/cache/express-npm-4.17.1-6815ee6bf9-3.zip/node_modules/express/index.js
  @ ./src/server.ts
- ```
+```
 
 ## Errors
 
