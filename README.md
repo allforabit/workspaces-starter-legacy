@@ -8,8 +8,6 @@ This is mostly for me, and over time I'll tweak this as I see fit over time for 
 
 There are a handlful of optimisations and additions I need to add, performance and tooling wise for future projects.
 
-- Prettier
-- ESLint-TypeScript ~~TSLint~~
 - Performance optimisations (will always need work)
 - Jest Testing
 
