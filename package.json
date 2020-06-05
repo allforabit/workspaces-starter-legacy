@@ -5,6 +5,7 @@
   "repository": "https://github.com/TheGrimSilence/yarn-berry-webpack-typescript.git",
   "author": "Grim <silencegrim@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "doctor": "yarn dlx @yarnpkg/doctor",
     "build": "yarn webpack-cli --config ./config/webpack.config.ts"
