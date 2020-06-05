@@ -1,4 +1,4 @@
-# Webpack Yarn 2 TypeScript Starter
+# Yarn 2, Webpack 4, Typescript 3.9 Starter with ESlint + Prettier Support
 
 I created this simple repository since I found a severe lack of examples and explanations for various errors I came across whem trying to get things working. Feel free to use it for new projects, or even just a code-based documentation like me because I'm forgetful.
 
