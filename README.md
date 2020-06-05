@@ -45,4 +45,8 @@ Yarn 2 comes with a revamp of workspaces, smarter and faster. There are a few ca
 
 ## ESLint + Prettier
 
+> In the TypeScript 2019 Roadmap, the TypeScript core team explains that ESLint has a more performant architecture than TSLint and that they will only be focusing on ESLint when providing editor linting integration for TypeScript. For that reason, I would recommend using ESLint for linting TypeScript projects. -- [Robert Cooper](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project).
+
+You can read about his implementation by following that link to his website.
+
 Although VS Code's Extensions are broken with Yarn 2 right now, you can still use the ESLint CLI to focus on immediate fixes as a one-off command, rather than where I usally format on save. Hopefully Plug 'n Play will be fixed, but right now I get continuous errors when running prettier, and ESLint is inactive.
