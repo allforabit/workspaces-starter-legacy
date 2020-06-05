@@ -4,7 +4,14 @@ const PnpWebpackPlugin = require('pnp-webpack-plugin')
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
 const config: Configuration = {
-  entry: path.resolve(__dirname, '..', 'src', 'server.ts'),
+  entry: {
+    server: path.resolve(__dirname, '..', 'src', 'server.ts'),
+    api: path.resolve(__dirname, '..', 'src', 'api.ts'),
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, '..', 'build')
+  },
   mode: 'development',
   watch: true,
   target: 'async-node',
@@ -39,10 +46,6 @@ const config: Configuration = {
         ]
       }
     ]
-  },
-  output: {
-    filename: 'server.js',
-    path: path.resolve(__dirname, '..', 'build')
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],

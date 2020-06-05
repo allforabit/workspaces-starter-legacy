@@ -1,13 +1,14 @@
 import express from 'express'
+import os from 'os'
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello, World!!');
+  res.send(`'Hello, ${os.userInfo().username}!'`);
 })
 
 app.get('/about', (req, res) => {
-  res.send('Hello, about page!!');
+  res.send('Hello, about page!');
 })
 
 app.listen(3000);
