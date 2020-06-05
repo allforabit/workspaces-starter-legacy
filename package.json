@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "doctor": "yarn dlx @yarnpkg/doctor",
-    "build": "yarn webpack-cli --config ./webpack.config.ts"
+    "build": "yarn webpack-cli --config ./config/webpack.config.ts"
   },
   "devDependencies": {
     "@types/express": "4.17.6",
