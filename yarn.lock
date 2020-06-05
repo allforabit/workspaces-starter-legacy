@@ -2275,6 +2275,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flight-service@workspace:services/flight-service":
+  version: 0.0.0-use.local
+  resolution: "flight-service@workspace:services/flight-service"
+  dependencies:
+    "@types/express": 4.17.6
+    express: ^4.17.1
+    tslib: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
 "flush-write-stream@npm:^1.0.0":
   version: 1.1.1
   resolution: "flush-write-stream@npm:1.1.1"
@@ -2357,6 +2367,16 @@ __metadata:
   checksum: 3/5f1a9bbff02d30cf5b4f12cfef20b47455876f8318b92d275ca39e3c5adf0636d3a0d8f4821a1c245339c47e79a551dce9ce5c7d9236c16347b934dc13d1d408
   languageName: node
   linkType: hard
+
+"frontend@workspace:frontend":
+  version: 0.0.0-use.local
+  resolution: "frontend@workspace:frontend"
+  dependencies:
+    "@types/express": 4.17.6
+    express: ^4.17.1
+    tslib: ^2.0.0
+  languageName: unknown
+  linkType: soft
 
 "fs-minipass@npm:^1.2.5":
   version: 1.2.7
@@ -4288,6 +4308,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"plantae-service@workspace:services/plantae-service":
+  version: 0.0.0-use.local
+  resolution: "plantae-service@workspace:services/plantae-service"
+  dependencies:
+    "@types/express": 4.17.6
+    express: ^4.17.1
+    tslib: ^2.0.0
+  languageName: unknown
+  linkType: soft
+
 "pluralize@npm:^7.0.0":
   version: 7.0.0
   resolution: "pluralize@npm:7.0.0"
@@ -5646,6 +5676,16 @@ typescript@^3.9.5:
   checksum: 3/8dd3bdeeda53864c779e0fa8d799064739708f80b45d06fa48a1a6ba192dc3f9e3266d4556f223cd718d27aedfd957922152e7463c00ac46e185f8331353fb6f
   languageName: node
   linkType: hard
+
+"user-service@workspace:services/user-service":
+  version: 0.0.0-use.local
+  resolution: "user-service@workspace:services/user-service"
+  dependencies:
+    "@types/express": 4.17.6
+    express: ^4.17.1
+    tslib: ^2.0.0
+  languageName: unknown
+  linkType: soft
 
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:~1.0.1":
   version: 1.0.2

@@ -1,0 +1,10 @@
+{
+  "name": "flight-service",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.6",
+    "tslib": "^2.0.0"
+  }
+}

@@ -21,11 +21,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "yarn-berry-webpack-typescript",
         "reference": "workspace:."
+      },
+      {
+        "name": "flight-service",
+        "reference": "workspace:services/flight-service"
+      },
+      {
+        "name": "plantae-service",
+        "reference": "workspace:services/plantae-service"
+      },
+      {
+        "name": "user-service",
+        "reference": "workspace:services/user-service"
+      },
+      {
+        "name": "frontend",
+        "reference": "workspace:frontend"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.vscode\\/pnpify(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["flight-service", ["workspace:services/flight-service"]],
+      ["frontend", ["workspace:frontend"]],
+      ["plantae-service", ["workspace:services/plantae-service"]],
+      ["user-service", ["workspace:services/user-service"]],
       ["yarn-berry-webpack-typescript", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -2683,6 +2703,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["flight-service", [
+        ["workspace:services/flight-service", {
+          "packageLocation": "./services/flight-service/",
+          "packageDependencies": [
+            ["flight-service", "workspace:services/flight-service"],
+            ["@types/express", "npm:4.17.6"],
+            ["express", "npm:4.17.1"],
+            ["tslib", "npm:2.0.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["flush-write-stream", [
         ["npm:1.1.1", {
           "packageLocation": "./.yarn/cache/flush-write-stream-npm-1.1.1-54f7360c04-3.zip/node_modules/flush-write-stream/",
@@ -2777,6 +2809,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["readable-stream", "npm:2.3.7"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["frontend", [
+        ["workspace:frontend", {
+          "packageLocation": "./frontend/",
+          "packageDependencies": [
+            ["frontend", "workspace:frontend"],
+            ["@types/express", "npm:4.17.6"],
+            ["express", "npm:4.17.1"],
+            ["tslib", "npm:2.0.0"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["fs-minipass", [
@@ -4909,6 +4953,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["plantae-service", [
+        ["workspace:services/plantae-service", {
+          "packageLocation": "./services/plantae-service/",
+          "packageDependencies": [
+            ["plantae-service", "workspace:services/plantae-service"],
+            ["@types/express", "npm:4.17.6"],
+            ["express", "npm:4.17.1"],
+            ["tslib", "npm:2.0.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["pluralize", [
         ["npm:7.0.0", {
           "packageLocation": "./.yarn/cache/pluralize-npm-7.0.0-5e0212129c-3.zip/node_modules/pluralize/",
@@ -6409,6 +6465,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["use", "npm:3.1.1"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["user-service", [
+        ["workspace:services/user-service", {
+          "packageLocation": "./services/user-service/",
+          "packageDependencies": [
+            ["user-service", "workspace:services/user-service"],
+            ["@types/express", "npm:4.17.6"],
+            ["express", "npm:4.17.1"],
+            ["tslib", "npm:2.0.0"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["util", [

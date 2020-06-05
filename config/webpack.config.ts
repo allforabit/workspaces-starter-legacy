@@ -5,8 +5,10 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 
 const config: Configuration = {
   entry: {
-    server: path.resolve(__dirname, '..', 'src', 'server.ts'),
-    api: path.resolve(__dirname, '..', 'src', 'api.ts'),
+    frontend: path.resolve(__dirname, '..', 'frontend', 'server.ts'),
+    "flight-service": path.resolve(__dirname, '..', 'services', 'flight-service', 'index.ts'),
+    "plantae-service": path.resolve(__dirname, '..', 'services', 'plantae-service', 'index.ts'),
+    "user-service": path.resolve(__dirname, '..', 'services', 'user-service', 'index.ts'),
   },
   output: {
     filename: '[name].js',
