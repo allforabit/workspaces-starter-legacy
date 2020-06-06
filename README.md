@@ -67,30 +67,7 @@ For Express, I'm using Supertest, and plan on adding Enzyme for React soon as we
 
 ### Yarn 2 ECMAScript Modules
 
-Under normal circumstances, simple adding `"type": "module"` to your package.json would enable `import` methods. However, it gets complicated with *Y2*. When you *enable modules* you have to make a few changes, and repeat those changes when importing new plugins for *Y2*. Read [Make yarn work inside a workspace with "type": "module" #1354](https://github.com/yarnpkg/berry/pull/1354) and [[Bug] Yarn Nightly and "type": "module" fail to work #985](https://github.com/yarnpkg/berry/issues/985) for more information on this. To summarize:
-
-```bash
-# Edit .yarnrc.yml to match
-# ...
-# yarnPath ".yarn/releases/yarn-berry.cjs"
-# ...
-
-# If you have plugins, rename those too
-# ...
-# plugins:
-#   - path: .yarn/plugins/@yarnpkg/plugin-typescript.cjs
-#     spec: "@yarnpkg/plugin-typescript"
-#   - path: .yarn/plugins/@yarnpkg/plugin-workspace-tools.cjs
-#     spec: "@yarnpkg/plugin-workspace-tools"
-# ...
-
-# Rename your binary
-mv .\.yarn\releases\yarn-berry.js .\.yarn\releases\yarn-berry.cjs
-# Rename your plugins
-mv .\.yarn\plugins\@yarnpkg\plugin-typescript.js .\.yarn\plugins\@yarnpkg\plugin-typescript.cjs
-mv .\.yarn\plugins\@yarnpkg\plugin-workspace-tools.js .\.yarn\plugins\@yarnpkg\plugin-workspace-tools.cjs
-# ...
-```
+Previously I mentioned that simply renaming yarn's files was fix for implementing modules, unfortunately I found that although this is a reported fix, it doesn't play nice with VS Code extensions, Linting and TSC both fail to start completely. 
 
 ### Webpack
 
