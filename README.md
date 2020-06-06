@@ -1,4 +1,4 @@
-# Yarn 2, Webpack 4, Typescript 3.9 Starter with ESlint + Prettier Support
+# Y2WT Starter
 
 ![Y2WT Test Runner](https://github.com/TheGrimSilence/yarn-berry-webpack-typescript/workflows/Y2WT%20Test%20Runner/badge.svg?branch=master&event=push)
 
