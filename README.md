@@ -1,15 +1,8 @@
 # Yarn 2, Webpack 4, Typescript 3.9 Starter with ESlint + Prettier Support
 
-I created this simple repository since I found a severe lack of examples and explanations for various errors I came across whem trying to get things working. Feel free to use it for new projects, or even just a code-based documentation like me because I'm forgetful.
+I created this simple repository since I found a severe lack of examples and explanations for various errors I came across when trying to get things working. Feel free to use it for new projects, or even just a code-based documentation like me because I'm forgetful.
 
 This is mostly for me, and over time I'll tweak this as I see fit over time for the best possible performance. I left web development for a long time to focus on Kotlin and Java so I forgot a lot about built tools, but I still have a favoritism for the bleeding edge.
-
-## TODO
-
-There are a handlful of optimisations and additions I need to add, performance and tooling wise for future projects.
-
-- Performance optimisations (will always need work)
-- Jest Testing
 
 ## Express
 
@@ -23,6 +16,10 @@ Critical dependency: the request of a dependency is an expression
  @ ./.yarn/cache/express-npm-4.17.1-6815ee6bf9-3.zip/node_modules/express/index.js
  @ ./src/server.ts
 ```
+
+### Testing with `supertest`
+
+One caveat to testing Express with Supertest is that you have to separate `app.listen()` from your main endpoints. Otherwise Jest will complain about open handles (yarn jest --detectOpenHandles) and won't exit correctly.
 
 ## Errors
 
@@ -50,3 +47,9 @@ Yarn 2 comes with a revamp of workspaces, smarter and faster. There are a few ca
 You can read about his implementation by following that link to his website.
 
 In order to get things working with Yarn 2, simply run `yarn pnpify --sdk` if you're having issues with ESLint and Prettier extensions in VS Code. It's that simple!
+
+## Testing with `jest`
+
+I've chosen Jest as my test package for it's ease-of-use and support. As much as I absolutely *__hate__* Babel, it was required to get the ball rolling on account of various errors. I could simply convert the test structure to use independent `test.tsconfig.json`s but that would add to the repetitive tasks. I like the global configs and independent dependency trees approach I have.
+
+For Express, I'm using Supertest, and plan on adding Enzyme for React soon as well to cover the main areas of concern. Or, I may begin to branch these out for individual use cases. Still deciding.
