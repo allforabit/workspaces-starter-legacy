@@ -25,6 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install unplugged dependencies
-      run: yarn rebuild
+      run: |
+        yarn cache clean
+        yarn install
     - name: Run tests
       run: yarn test
