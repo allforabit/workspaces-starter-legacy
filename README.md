@@ -94,3 +94,9 @@ Required by: send@npm:0.17.1 (via /C:/Users/adria/Desktop/Grim/projects/yarn-ber
 ### TS Server + Code
 
 If you're using [Code](https://code.visualstudio.com), you'll notice occassionally the TS Server reports errors that certain files don't exist when you move them. This is either a direct TS Server bug, or a Yarn 2 bug, either way, simply restart the server with <kbd>CTRL</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and type `>TypeScript: Restart TS Server`.
+
+---
+
+## Linguist Override
+
+Linguist powers your GitHub Language Stats, assuming it works as [detailed](https://github.com/github/linguist#overrides), it should ignore Yarn 2 as if it were a vendor via the `.gitattributes` file. It's a background task that updates the information, so it may take time to show. If you'd like to disable the Yarn 2 exclusion, just delete the two lines at the bottom.
