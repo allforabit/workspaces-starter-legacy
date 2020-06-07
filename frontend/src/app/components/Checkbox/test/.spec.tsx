@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, render, fireEvent } from '@testing-library/react';
-import { CheckboxWithLabel } from './index';
+import { CheckboxWithLabel } from '../index';
 
 afterEach(cleanup);
 

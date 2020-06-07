@@ -1,6 +1,5 @@
-import { app } from '../endpoints';
 import supertest from 'supertest';
-import os from 'os';
+import { app } from '../endpoints';
 
 const request = supertest(app);
 
@@ -9,7 +8,6 @@ describe('Jest and Supertest work flawlessly', () => {
     const response = await request.get('/');
 
     expect(response.status).toBe(200);
-    expect(response.text).toBe(`Hello, ${os.userInfo().username}!`);
 
     done();
   });
