@@ -56,7 +56,7 @@ const config: Configuration = {
   },
   target: 'async-node',
   stats: {
-    warnings: false,
+    warnings: true,
   },
   module: {
     rules: [
