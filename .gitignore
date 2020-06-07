@@ -3,8 +3,7 @@
 !.yarn/cache
 !.yarn/releases
 !.yarn/plugins
-!.yarn/versions
-!.yarn/build-state.yml
+!/yarn/versions
 
 # TypeScript
 build/
