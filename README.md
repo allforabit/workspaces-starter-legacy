@@ -4,7 +4,11 @@
 
 I created this simple repository since I found a severe lack of examples and explanations for various errors I came across when trying to get things working. Feel free to use it for new projects, or even just a code-based documentation like me because I'm forgetful.
 
-This is mostly for me, and over time I'll tweak this as I see fit over time for the best possible performance. I left web development for a long time to focus on Kotlin and Java so I forgot a lot about built tools, but I still have a favoritism for the bleeding edge.
+This is mostly for me, and over time I'll tweak this as I see fit over time for the best possible performance. I left web development for a long time to focus on Kotlin and Java so I forgot a lot about built tools, but I still have a favoritism for the bleeding edge. It goes without saying, although this is a template repository, it's heavily opinionated for me and my company software. 
+
+## 🗣 By the way!
+
+I'm not the best developer. No one is. This repository is a mess because while it *is* stable, it's still experimental as well. I'm often fond of *__build fast, optimize later, idiomatic minifying last__*. So, "*it goes without saying that we're praying that they don't get out*" The Stupendium, [Slip Into the Void](https://www.youtube.com/watch?v=n6gGE9kxe1M). 
 
 ## Table of Contents
 
@@ -59,7 +63,9 @@ In order to get things working with Yarn 2, simply run `yarn pnpify --sdk` if yo
 
 I've chosen Jest as my test package for it's ease-of-use and support. As much as I absolutely *__hate__* Babel, it was required to get the ball rolling on account of various errors. I could simply convert the test structure to use independent `test.tsconfig.json`s but that would add to the repetitive tasks. I like the global configs and independent dependency trees approach I have.
 
-For Express, I'm using Supertest, and plan on adding Enzyme for React soon as well to cover the main areas of concern. Or, I may begin to branch these out for individual use cases. Still deciding.
+For Express, I'm using Supertest, and for React I use both Enzyme and React Testing Library across two separate test files: `.test.tsx` for Enzyme and `.spec.tsx` for React Testing Library. I do this for personal reasons, `spec` implies user interaction, where `test` implies data. Enzyme is best suited for the latter since it offers deep integration testing for an individual component, and RTL allows a high-level interactivity test. This this completely opinionated for me and my software practices, but I like to easily know where to find certain tests.
+
+Another note, I may switch to using `.(test | spec).tsx` instead of naming them, since they're named by their component folders. I prefer to reduce the amount of complexity as much as possible.
 
 ---
 
