@@ -10,7 +10,7 @@ This is mostly for me, and over time I'll tweak this as I see fit over time for 
 
 ## 🗣 By the way!
 
-I'm not the best developer. No one is. This repository is a mess because while it _is_ stable, it's still experimental as well. I'm often fond of _**build fast, optimize later, idiomatic minifying last**_. So, "_it goes without saying that we're praying that they don't get out_" The Stupendium, [Slip Into the Void](https://www.youtube.com/watch?v=n6gGE9kxe1M).
+I'm not the best developer. No one is. This repository is a mess because while it _is_ stable, it's still experimental as well. I'm often fond of _**build fast, optimize later, idiomatic minifying last**_. So, "_it goes without saying that we're praying that they don't get out_" The Stupendium, [Slip Into the Void](https://www.youtube.com/watch?v=n6gGE9kxe1M). For any information, feel free to check out the small [wiki](https://github.com/TheGrimSilence/Yarn-2-Webpack-TypeScript/wiki).
 
 ---
 
