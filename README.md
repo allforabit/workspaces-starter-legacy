@@ -90,3 +90,7 @@ Required by: send@npm:0.17.1 (via /C:/Users/adria/Desktop/Grim/projects/yarn-ber
  @ ./.yarn/cache/express-npm-4.17.1-6815ee6bf9-3.zip/node_modules/express/index.js
  @ ./src/server.ts
 ```
+
+### TS Server + Code
+
+If you're using [Code](https://code.visualstudio.com), you'll notice occassionally the TS Server reports errors that certain files don't exist when you move them. This is either a direct TS Server bug, or a Yarn 2 bug, either way, simply restart the server with <kbd>CTRL</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and type `>TypeScript: Restart TS Server`.
