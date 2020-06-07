@@ -27,7 +27,7 @@ I'm not the best developer. No one is. This repository is a mess because while i
 
 ## Express
 
-One thing that's unavoidable is warnings that come from Express. I found simply turning warnings off does the trick for me. See [lukechilds/keyv #45](https://github.com/lukechilds/keyv/issues/45).
+One thing that's unavoidable is warnings that come from Express. I found simply turning warnings off does the trick for me. See [keyv/issues#45](https://github.com/lukechilds/keyv/issues/45).
 
 ```bash
 WARNING in ./.yarn/cache/express-npm-4.17.1-6815ee6bf9-3.zip/node_modules/express/lib/view.js 81:13-25
