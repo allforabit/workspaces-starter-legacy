@@ -24,7 +24,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install unplugged dependencies
+
+    - name: Rebuild native dependencies
       run: yarn rebuild
-    - name: Run tests
+
+    - name: Build project
+      run: yarn build
+
+    - name: Test servers
       run: yarn test
