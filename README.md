@@ -2,6 +2,8 @@
 
 ![Y2WT Test Runner](https://github.com/TheGrimSilence/yarn-berry-webpack-typescript/workflows/Y2WT%20Test%20Runner/badge.svg?branch=master&event=push)
 
+This is a Yarn 2, Webpack and TypeScript starter template.
+
 I created this simple repository since I found a severe lack of examples and explanations for various errors I came across when trying to get things working. Feel free to use it for new projects, or even just a code-based documentation like me because I'm forgetful.
 
 This is mostly for me, and over time I'll tweak this as I see fit over time for the best possible performance. I left web development for a long time to focus on Kotlin and Java so I forgot a lot about built tools, but I still have a favoritism for the bleeding edge. It goes without saying, although this is a template repository, it's heavily opinionated for me and my company software.
