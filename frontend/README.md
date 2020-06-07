@@ -12,21 +12,23 @@ Ah, the most debated topic of old. I fould a beautiful article by [ROBIN WIERUCH
 app/
 ∟ components/ // Stores components
   ∟ Navbar/
-    ∟ test
+    ∟ test/
       ⊢ .test.tsx
       ⊢ .spec.tsx
     ⊢ index.tsx
     ⊢ style.scss
   ∟ Footer/
+    ∟ ⋯
   ∟ ⋯
 ∟ domain
   ∟ Home/
-    ∟ test
+    ∟ test/
       ⊢ .test.tsx
       ⊢ .spec.tsx
     ⊢ index.tsx
     ⊢ style.scss
   ∟ About/
+    ∟ ⋯
   ∟ ⋯
 ```
 
