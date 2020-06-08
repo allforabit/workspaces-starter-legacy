@@ -25,8 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Rebuild native dependencies
-      run: yarn rebuild
+    # - name: Rebuild native dependencies
+    #   run: yarn rebuild
 
     - name: Build project
       run: yarn build
