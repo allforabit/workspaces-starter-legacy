@@ -5,9 +5,9 @@ name: Y2WT Test Runner
 
 on:
   push:
-    branches: [ master ]
+    branches: [ major-refactor ]
   pull_request:
-    branches: [ master ]
+    branches: [ major-refactor ]
 
 jobs:
   build:
