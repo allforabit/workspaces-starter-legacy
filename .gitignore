@@ -4,6 +4,7 @@
 !.yarn/releases
 !.yarn/plugins
 !.yarn/versions
+!.yarn/install-state.gz
 
 # TypeScript
 build/
