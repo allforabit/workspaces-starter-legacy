@@ -3274,6 +3274,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-env@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "cross-env@npm:7.0.2"
+  dependencies:
+    cross-spawn: ^7.0.1
+  bin:
+    cross-env: src/bin/cross-env.js
+    cross-env-shell: src/bin/cross-env-shell.js
+  checksum: 624d638db3b4b6b221f32238aeb6785b865365bf41154f01d46a23b6d78f807ca5588a3b32e9af5f17384b866fed3752d0e3ecf8c4a8cfca2935d363d27ba058
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:6.0.5, cross-spawn@npm:^6.0.0":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
@@ -3297,7 +3309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -7348,6 +7360,13 @@ fsevents@^1.2.7:
   version: 1.4.1
   resolution: "merge2@npm:1.4.1"
   checksum: 7ad40d8b140a5ed4e621b916858410e4f0dd4ced1e5a2b675563347e70f0661d95ba6c3c8007dd3c4e242d0b8eee44559fa75bb90a146cf168debffc0cbc18f3
+  languageName: node
+  linkType: hard
+
+"merge@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "merge@npm:1.2.1"
+  checksum: f6a054fa9666ab56eaac9628c24fb5710ba4ccd3a2d3f511247fbbc470f27d0dcf3bbbddbc84ad98dc47304830775caffe95ee3bd67b5e0b0f7c280122f24ca8
   languageName: node
   linkType: hard
 
@@ -11824,6 +11843,7 @@ typescript@^3.9.5:
     "@typescript-eslint/parser": ^3.1.0
     "@yarnpkg/pnpify": ^2.0.0-rc.22
     cache-loader: ^4.1.0
+    cross-env: ^7.0.2
     css-loader: ^3.5.3
     del-cli: ^3.0.1
     enzyme: ^3.11.0
@@ -11838,6 +11858,7 @@ typescript@^3.9.5:
     html-webpack-plugin: ^4.3.0
     jest: ^26.0.1
     jest-environment-node: ^26.0.1
+    merge: ^1.2.1
     mini-css-extract-plugin: ^0.9.0
     node-sass: ^4.14.1
     open-cli: ^6.0.1

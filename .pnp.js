@@ -138,6 +138,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:4.1.0"
       ],
       [
+        "cross-env",
+        "npm:7.0.2"
+      ],
+      [
         "css-loader",
         "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.5.3"
       ],
@@ -192,6 +196,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "jest-environment-node",
         "npm:26.0.1"
+      ],
+      [
+        "merge",
+        "npm:1.2.1"
       ],
       [
         "mini-css-extract-plugin",
@@ -291,6 +299,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.1.0"],
             ["@yarnpkg/pnpify", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:2.0.0-rc.22"],
             ["cache-loader", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:4.1.0"],
+            ["cross-env", "npm:7.0.2"],
             ["css-loader", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.5.3"],
             ["del-cli", "npm:3.0.1"],
             ["enzyme", "npm:3.11.0"],
@@ -305,6 +314,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["html-webpack-plugin", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:4.3.0"],
             ["jest", "npm:26.0.1"],
             ["jest-environment-node", "npm:26.0.1"],
+            ["merge", "npm:1.2.1"],
             ["mini-css-extract-plugin", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:0.9.0"],
             ["node-sass", "npm:4.14.1"],
             ["open-cli", "npm:6.0.1"],
@@ -4058,6 +4068,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ripemd160", "npm:2.0.2"],
             ["safe-buffer", "npm:5.2.1"],
             ["sha.js", "npm:2.4.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cross-env", [
+        ["npm:7.0.2", {
+          "packageLocation": "./.yarn/cache/cross-env-npm-7.0.2-1e9c9fdbca-624d638db3.zip/node_modules/cross-env/",
+          "packageDependencies": [
+            ["cross-env", "npm:7.0.2"],
+            ["cross-spawn", "npm:7.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -8491,6 +8511,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["trim-newlines", "npm:3.0.0"],
             ["type-fest", "npm:0.13.1"],
             ["yargs-parser", "npm:18.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["merge", [
+        ["npm:1.2.1", {
+          "packageLocation": "./.yarn/cache/merge-npm-1.2.1-852b934216-f6a054fa96.zip/node_modules/merge/",
+          "packageDependencies": [
+            ["merge", "npm:1.2.1"]
           ],
           "linkType": "HARD",
         }]
@@ -13430,6 +13459,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.1.0"],
             ["@yarnpkg/pnpify", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:2.0.0-rc.22"],
             ["cache-loader", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:4.1.0"],
+            ["cross-env", "npm:7.0.2"],
             ["css-loader", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:3.5.3"],
             ["del-cli", "npm:3.0.1"],
             ["enzyme", "npm:3.11.0"],
@@ -13444,6 +13474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["html-webpack-plugin", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:4.3.0"],
             ["jest", "npm:26.0.1"],
             ["jest-environment-node", "npm:26.0.1"],
+            ["merge", "npm:1.2.1"],
             ["mini-css-extract-plugin", "virtual:8c613a857e9239d51cfdd3f0e66b1fdf42dcd4b2dcf9b96a211436253ee9b70ff8f876ef302bbe586ed82e2fd4ebd3c61656e3c3ddf8b60b952c588f0547db7c#npm:0.9.0"],
             ["node-sass", "npm:4.14.1"],
             ["open-cli", "npm:6.0.1"],
