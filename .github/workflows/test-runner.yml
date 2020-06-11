@@ -30,6 +30,9 @@ jobs:
     #     yarn cache clean
     #     yarn
 
+    - name: Rebuild dependencies
+      run: yarn rebuild
+
     - name: Build project
       run: yarn build
 
