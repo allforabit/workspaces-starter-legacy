@@ -3,10 +3,10 @@
 !.yarn/cache
 !.yarn/releases
 !.yarn/plugins
-!.yarn/unplugged
+# !.yarn/unplugged
 !.yarn/versions
-!.yarn/build-state.yml
-!.yarn/install-state.gz
+# !.yarn/build-state.yml
+# !.yarn/install-state.gz
 
 # TypeScript
 build/
