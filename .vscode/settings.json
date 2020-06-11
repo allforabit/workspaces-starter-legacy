@@ -3,11 +3,7 @@
   "files.eol": "\n",
   "typescript.tsdk": ".vscode/pnpify/typescript/lib",
   "npm.packageManager": "yarn",
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "eslint.enable": true,
   "eslint.nodePath": ".vscode/pnpify",
   "editor.codeActionsOnSave": {

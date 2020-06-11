@@ -5,9 +5,9 @@ name: Y2WT Test Runner
 
 on:
   push:
-    branches: [ master ]
+    branches: [ major-refactor ]
   pull_request:
-    branches: [ master ]
+    branches: [ major-refactor ]
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Rebuild native dependencies
+    - name: Rebuild dependencies
       run: yarn rebuild
 
     - name: Build project
@@ -33,3 +33,6 @@ jobs:
 
     - name: Test servers
       run: yarn test
+    
+    - name: Peek directory structure
+      run: ls -la

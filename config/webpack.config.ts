@@ -1,116 +1,111 @@
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
-import { Configuration } from 'webpack';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-const PnpWebpackPlugin = require('pnp-webpack-plugin');
+import { CleanWebpackPlugin as CleanPlugin } from 'clean-webpack-plugin';
+import TsCheckerPlugin from 'fork-ts-checker-webpack-plugin';
+import { cpus } from 'os';
+import { Configuration, ProgressPlugin } from 'webpack';
+import merge from 'webpack-merge';
+import frontend from './frontend.config';
+import services from './services.config';
+import isProductionBuild from './util/env';
+import paths from './util/paths';
+const PnpPlugin = require('pnp-webpack-plugin');
 
-const config: Configuration = {
-  entry: {
-    'frontend-app': path.resolve(
-      __dirname,
-      '..',
-      'frontend',
-      'src',
-      'app',
-      'index.tsx'
-    ),
-    'frontend-server': path.resolve(
-      __dirname,
-      '..',
-      'frontend',
-      'src',
-      'server',
-      'server.ts'
-    ),
-    'flight-service': path.resolve(
-      __dirname,
-      '..',
-      'services',
-      'flight-service',
-      'index.ts'
-    ),
-    'plantae-service': path.resolve(
-      __dirname,
-      '..',
-      'services',
-      'plantae-service',
-      'index.ts'
-    ),
-    'user-service': path.resolve(
-      __dirname,
-      '..',
-      'services',
-      'user-service',
-      'index.ts'
-    ),
-  },
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, '..', 'build'),
-  },
-  mode: 'development',
-  watch: false,
-  node: {
-    __dirname: true,
-  },
-  target: 'async-node',
-  stats: {
-    warnings: false,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        use: [
-          {
-            loader: 'cache-loader',
-          },
-          {
-            loader: 'thread-loader',
-            options: {
-              // Reserve 1 cpu for ForkTsCheckerWebpackPlugin
-              // eslint-disable-next-line @typescript-eslint/no-var-requires
-              workers: require('os').cpus.length - 1,
-              poolTimeout: Infinity,
+console.log(
+  `Starting ${isProductionBuild ? 'production' : 'development'} environment...`
+);
+
+const config: Configuration = merge(
+  {
+    devServer: {
+      contentBase: paths.build.public.html,
+      hot: true,
+      port: 3000,
+    },
+    devtool: 'source-map',
+    mode: isProductionBuild ? 'production' : 'development',
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          use: [
+            {
+              loader: 'cache-loader',
             },
-          },
-          {
-            loader: require.resolve('ts-loader'),
-            options: {
-              configFile: 'tsconfig.json',
-              transpileOnly: true,
-              experimentalWatchApi: true,
-              happyPackMode: true,
+            {
+              loader: 'thread-loader',
+              options: {
+                workers: cpus.length - 1,
+                poolTimeout: Infinity,
+              },
             },
-          },
-        ],
-      },
+            {
+              loader: 'ts-loader',
+              options: {
+                configFile: paths.config.tsconfig,
+                transpileOnly: true,
+                experimentalWatchApi: true,
+                happyPackMode: true,
+              },
+            },
+          ],
+        },
+        {
+          enforce: 'pre',
+          test: /\.js$/,
+          loader: 'source-map-loader',
+        },
+      ],
+    },
+    node: {
+      __dirname: true,
+    },
+    output: {
+      filename: '[name].js',
+      path: paths.build.root,
+    },
+    plugins: [
+      new ProgressPlugin(),
+      new TsCheckerPlugin({
+        async: !isProductionBuild,
+        checkSyntacticErrors: true,
+        silent: true,
+        tsconfig: paths.config.tsconfig,
+        useTypescriptIncrementalApi: true,
+      }),
+      new CleanPlugin({ verbose: !isProductionBuild }),
+    ],
+    resolve: {
+      extensions: ['.tsx', '.ts', '.js'],
+      plugins: [PnpPlugin],
+    },
+    resolveLoader: {
+      plugins: [PnpPlugin.moduleLoader(module)],
+    },
+    stats: {
+      warnings: false,
+    },
+    target: 'async-node',
+    watch: !isProductionBuild,
+  } as Configuration,
+  frontend as Configuration,
+  services as Configuration,
+  {
+    plugins: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        apply: (compiler) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          compiler.hooks.done.tap('DonePlugin', (_stats) => {
+            if (isProductionBuild) {
+              setTimeout(() => {
+                console.log(`Compilation complete...`);
+
+                process.exit(0);
+              }, 0);
+            }
+          });
+        },
       },
     ],
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-    plugins: [PnpWebpackPlugin],
-  },
-  resolveLoader: {
-    plugins: [PnpWebpackPlugin.moduleLoader(module)],
-  },
-  plugins: [
-    new ForkTsCheckerWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      chunks: ['frontend-app'],
-      inject: true,
-      template: path.resolve(__dirname, '..', 'public', 'index.html'),
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
-};
+  } as Configuration
+);
 
 export default config;
