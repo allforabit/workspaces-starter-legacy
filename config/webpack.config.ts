@@ -16,7 +16,7 @@ console.log(
 const config: Configuration = merge(
   {
     devServer: {
-      contentBase: paths.build.public.app,
+      contentBase: paths.build.public.html,
       hot: true,
       port: 3000,
     },

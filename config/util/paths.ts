@@ -31,7 +31,7 @@ const paths = {
   build: {
     root: root('build'),
     public: {
-      app: root('build/public', 'index.html'),
+      html: root('build/public', 'index.html'),
     },
   },
   config: {

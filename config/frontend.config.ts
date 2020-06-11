@@ -10,10 +10,6 @@ const frontend: Configuration = {
     'static/js/app': paths.source.frontend.app,
     server: paths.source.frontend.server,
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
   module: {
     rules: [
       {
