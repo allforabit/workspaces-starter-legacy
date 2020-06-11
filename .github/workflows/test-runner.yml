@@ -25,10 +25,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Reinstall dependencies
-      run: |
-        yarn cache clean
-        yarn
+    # - name: Reinstall dependencies
+    #   run: |
+    #     yarn cache clean
+    #     yarn
 
     - name: Build project
       run: yarn build

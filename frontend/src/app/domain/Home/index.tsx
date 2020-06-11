@@ -1,7 +1,7 @@
 import React from 'react';
+import { Footer } from '../../components/Footer';
 import { Main } from '../../components/Main';
 import { Navbar } from '../../components/Navbar';
-import { Footer } from '../../components/Footer';
 
 export class Home extends React.Component {
   render(): JSX.Element {
