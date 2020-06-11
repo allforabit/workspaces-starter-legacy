@@ -12678,6 +12678,74 @@ typescript@^3.9.5:
   languageName: node
   linkType: hard
 
+"y2wt-starter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "y2wt-starter@workspace:."
+  dependencies:
+    "@babel/core": ^7.10.2
+    "@babel/plugin-transform-modules-commonjs": ^7.10.1
+    "@babel/preset-react": ^7.10.1
+    "@babel/preset-typescript": ^7.10.1
+    "@types/babel__core": 7.1.8
+    "@types/enzyme": 3.10.5
+    "@types/enzyme-adapter-react-16": 1.0.6
+    "@types/eslint": 6.8.1
+    "@types/eslint-plugin-prettier": 3.1.0
+    "@types/express": 4.17.6
+    "@types/jest": ^25.2.3
+    "@types/mini-css-extract-plugin": 0.9.1
+    "@types/node-sass": 4.11.1
+    "@types/prettier": 2.0.1
+    "@types/react": 16.9.35
+    "@types/react-dom": 16.9.8
+    "@types/supertest": 2.0.9
+    "@types/webpack": 4.41.17
+    "@types/webpack-dev-server": 3.11.0
+    "@types/webpack-merge": 4.1.5
+    "@typescript-eslint/eslint-plugin": ^3.1.0
+    "@typescript-eslint/parser": ^3.1.0
+    "@yarnpkg/pnpify": ^2.0.0-rc.22
+    cache-loader: ^4.1.0
+    clean-webpack-plugin: ^3.0.0
+    css-loader: ^3.5.3
+    del-cli: ^3.0.1
+    enzyme: ^3.11.0
+    enzyme-adapter-react-16: ^1.15.2
+    eslint: ^7.1.0
+    eslint-config-prettier: ^6.11.0
+    eslint-plugin-prettier: ^3.1.3
+    eslint-plugin-react: ^7.20.0
+    express: ^4.17.1
+    fork-ts-checker-webpack-plugin: ^4.1.6
+    html-loader: ^1.1.0
+    html-webpack-plugin: ^4.3.0
+    jest: ^26.0.1
+    jest-environment-node: ^26.0.1
+    mini-css-extract-plugin: ^0.9.0
+    node-sass: ^4.14.1
+    open-cli: ^6.0.1
+    pnp-webpack-plugin: ^1.6.4
+    prettier: ^2.0.5
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    react-hot-loader: ^4.12.21
+    sass-loader: ^8.0.2
+    source-map-loader: ^1.0.0
+    style-loader: ^1.2.1
+    supertest: ^4.0.2
+    thread-loader: ^2.1.3
+    ts-loader: ^7.0.5
+    ts-node: ^8.10.2
+    tslib: ^2.0.0
+    typescript: ^3.9.5
+    typescript-styled-plugin: ^0.15.0
+    webpack: ^4.43.0
+    webpack-cli: ^3.3.11
+    webpack-dev-server: ^3.11.0
+    webpack-merge: ^4.2.2
+  languageName: unknown
+  linkType: soft
+
 "yallist@npm:^2.1.2":
   version: 2.1.2
   resolution: "yallist@npm:2.1.2"
@@ -12774,74 +12842,6 @@ typescript@^3.9.5:
   checksum: 6504a0bb4e6f5933ebaaa52307943a9cdb44da6200cd1ca8794aaa1d18b70f0acd2f49f46630b07bd4d2aa12cb1fe666b186d367c36fa1b4998f7ce8bdc9ffdf
   languageName: node
   linkType: hard
-
-"yarn-berry-webpack-typescript@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "yarn-berry-webpack-typescript@workspace:."
-  dependencies:
-    "@babel/core": ^7.10.2
-    "@babel/plugin-transform-modules-commonjs": ^7.10.1
-    "@babel/preset-react": ^7.10.1
-    "@babel/preset-typescript": ^7.10.1
-    "@types/babel__core": 7.1.8
-    "@types/enzyme": 3.10.5
-    "@types/enzyme-adapter-react-16": 1.0.6
-    "@types/eslint": 6.8.1
-    "@types/eslint-plugin-prettier": 3.1.0
-    "@types/express": 4.17.6
-    "@types/jest": ^25.2.3
-    "@types/mini-css-extract-plugin": 0.9.1
-    "@types/node-sass": 4.11.1
-    "@types/prettier": 2.0.1
-    "@types/react": 16.9.35
-    "@types/react-dom": 16.9.8
-    "@types/supertest": 2.0.9
-    "@types/webpack": 4.41.17
-    "@types/webpack-dev-server": 3.11.0
-    "@types/webpack-merge": 4.1.5
-    "@typescript-eslint/eslint-plugin": ^3.1.0
-    "@typescript-eslint/parser": ^3.1.0
-    "@yarnpkg/pnpify": ^2.0.0-rc.22
-    cache-loader: ^4.1.0
-    clean-webpack-plugin: ^3.0.0
-    css-loader: ^3.5.3
-    del-cli: ^3.0.1
-    enzyme: ^3.11.0
-    enzyme-adapter-react-16: ^1.15.2
-    eslint: ^7.1.0
-    eslint-config-prettier: ^6.11.0
-    eslint-plugin-prettier: ^3.1.3
-    eslint-plugin-react: ^7.20.0
-    express: ^4.17.1
-    fork-ts-checker-webpack-plugin: ^4.1.6
-    html-loader: ^1.1.0
-    html-webpack-plugin: ^4.3.0
-    jest: ^26.0.1
-    jest-environment-node: ^26.0.1
-    mini-css-extract-plugin: ^0.9.0
-    node-sass: ^4.14.1
-    open-cli: ^6.0.1
-    pnp-webpack-plugin: ^1.6.4
-    prettier: ^2.0.5
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    react-hot-loader: ^4.12.21
-    sass-loader: ^8.0.2
-    source-map-loader: ^1.0.0
-    style-loader: ^1.2.1
-    supertest: ^4.0.2
-    thread-loader: ^2.1.3
-    ts-loader: ^7.0.5
-    ts-node: ^8.10.2
-    tslib: ^2.0.0
-    typescript: ^3.9.5
-    typescript-styled-plugin: ^0.15.0
-    webpack: ^4.43.0
-    webpack-cli: ^3.3.11
-    webpack-dev-server: ^3.11.0
-    webpack-merge: ^4.2.2
-  languageName: unknown
-  linkType: soft
 
 "yn@npm:3.1.1":
   version: 3.1.1

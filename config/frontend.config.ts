@@ -26,6 +26,10 @@ const frontend: Configuration = {
     new HtmlPlugin({
       chunks: ['static/js/app'],
       hash: true,
+      meta: {
+        description:
+          'A starter for Yarn 2 workspaces, TypeScript, Webpack with ESLint + Prettier support',
+      },
       inject: true,
       filename: 'public/index.html',
       minify: isProductionBuild
