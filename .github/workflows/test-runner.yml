@@ -38,3 +38,6 @@ jobs:
 
     - name: Test servers
       run: yarn test
+    
+    - name: Peek directory structure
+      run: la
