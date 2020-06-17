@@ -6,7 +6,6 @@
     "declaration": false,
     "sourceMap": true,
     "outDir": "./build",
-    "tsBuildInfoFile": "./ignorable-build-cache.json",
     "removeComments": true,
     "importHelpers": true,
     "downlevelIteration": true,
